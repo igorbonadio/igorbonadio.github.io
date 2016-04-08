@@ -272,3 +272,5 @@ score: 5
 ## Download
 
 Caso você queira testar os algoritmos desenvolvidos aqui, faça o download do [código fonte](https://gist.github.com/igorbonadio/def8416920c83b5bd7dfb2ea88f67013).
+
+**UPDATE:** Coloquei uma versão com recursão de cauda [aqui](https://gist.github.com/igorbonadio/bbd26f426365f3cec5e6bf590014f63f).
