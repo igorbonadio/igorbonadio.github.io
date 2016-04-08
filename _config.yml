@@ -1,0 +1,10 @@
+title: Your awesome title
+email: igorbonadio@gmail.com
+description: Blog sobre computação, programação, programação funcional, open source, modelos probabilísticos, conditional random fields (campos aleatórios condicionais) e bioinformática
+url: "http://igorbonadio.com.br" # the base hostname & protocol for your site
+github_username:  igorbonadio
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!-- break -->

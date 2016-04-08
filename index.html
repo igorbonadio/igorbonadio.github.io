@@ -1,0 +1,20 @@
+---
+layout: default
+title: Ígor Boadio | Blog
+---
+
+{% for post in site.posts %}
+  <div class="post">
+    <div class='post-header'>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <small>
+        {% for author in post.authors %}
+          <a href="/about.html#{{ author.anchor }}">{{ author.name }}</a> |
+        {% endfor %}
+        {{ post.date | date_to_string }}
+      </small>
+    </div>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url }}" class="pull-right btn">Continue lendo</a>
+  </div>
+{% endfor %}
