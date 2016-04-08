@@ -23,7 +23,7 @@ VAHV---D--DMPNALSALSDLHAHKL
 AIQLQVTGVVVTDATLKNLGSVHVSKG
 ```
 
-Antes de definirmos o algoritmo de alinhamento, temos que definir nossa função de pontuação. Para isso usaremos a matriz [BLOSUM80](https://en.wikipedia.org/wiki/BLOSUM) que atribui valores maiores para pareamento de aminoácidos semelhantes e valores menores para os alinhamentos menos prováveis. Não listarei o código dessa função por ser bastante repetitivo e pouco informativo (veja no [código completo](TODO_URL)). O que precisamos saber é que a pontuação de pareamento é dada pela função `score` e que a pontuação dos gaps é dada pela função `gap`:
+Antes de definirmos o algoritmo de alinhamento, temos que definir nossa função de pontuação. Para isso usaremos a matriz [BLOSUM80](https://en.wikipedia.org/wiki/BLOSUM) que atribui valores maiores para pareamento de aminoácidos semelhantes e valores menores para os alinhamentos menos prováveis. Não listarei o código dessa função por ser bastante repetitivo e pouco informativo (veja no [código completo](https://gist.github.com/igorbonadio/def8416920c83b5bd7dfb2ea88f67013)). O que precisamos saber é que a pontuação de pareamento é dada pela função `score` e que a pontuação dos gaps é dada pela função `gap`:
 
 ``` haskell
 score :: Int -> Int -> Int
@@ -271,4 +271,4 @@ score: 5
 
 ## Download
 
-Caso você queira testar os algoritmos desenvolvidos aqui, faça o download do [código fonte](TODO_URL).
+Caso você queira testar os algoritmos desenvolvidos aqui, faça o download do [código fonte](https://gist.github.com/igorbonadio/def8416920c83b5bd7dfb2ea88f67013).
