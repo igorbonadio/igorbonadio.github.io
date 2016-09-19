@@ -1,0 +1,20 @@
+---
+layout: default
+title: Projects
+section: projects
+---
+
+<div class="site-body">
+  <div class="papers">
+    <h1>Core Team Member</h2>
+    {% for project in site.projects %}
+      <div class="post">
+        <ul>
+          <li>
+            <p><strong><a href="{{ project.site }}">{{ project.name }}</a></strong> - {{ project.description}}</p>
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>

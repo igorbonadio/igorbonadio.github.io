@@ -1,50 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>{{ page.title }}</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
-  <link href="/css/normalize.css" rel="stylesheet" media="screen">
-  <link href="/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link href="/css/site.css" rel="stylesheet" media="screen">
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-    });
-  </script>
-  <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-</head>
-<body>
-  <div class="container">
-    <div class="menu">
-      <h1><a href="/index.html">Ígor Bonadio</a></h1>
-      <p>Desenvolve <a href="https://github.com/igorbonadio">projetos open source</a>,
-         é doutorando no <a href="http://www.ime.usp.br">IME-USP</a> e se diverte com jogos de tabuleiro nas horas vagas</p>
-    </div>
-    <div class="content">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container">
+      {% include header.html %}
+
       {{ content }}
+
+      {% include footer.html %}
     </div>
-  </div>
 
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-33102652-1']);
-_gaq.push(['_setDomainName', 'igorbonadio.com.br']);
-_gaq.push(['_trackPageview']);
+  </body>
 
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-</body>
 </html>

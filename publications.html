@@ -1,0 +1,31 @@
+---
+layout: default
+title: Publications
+section: publications
+---
+
+<div class="site-body">
+  <div class="papers">
+    <h1>Journal Papers</h2>
+    {% for paper in site.papers %}
+      <div class="post">
+        <ul>
+          <li>
+            {{ paper.authors }}. <a href="{{ paper.download }}">{{ paper.title }}</a>. {{ paper.journal }}, {{ paper.year }}.
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+
+    <h1>Thesis</h2>
+    {% for thesi in site.thesis %}
+      <div class="post">
+        <ul>
+          <li>
+            {{ thesi.author }}. <a href="{{ thesi.download }}"> {{ thesi.title }}</a>. {{ thesi.type }} - {{ thesi.where }}, {{ thesi.when }}.
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>

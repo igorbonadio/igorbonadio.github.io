@@ -1,22 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Titillium Web', sans-serif;
   font-size: 17px;
   color: #333333;
-}
-
-img {
-  width: auto\9;
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 a {
@@ -25,127 +10,99 @@ a {
 
 a:hover {
   color: #0A82CC;
+  text-decoration: none;
 }
 
 .container {
-  margin: 0 auto;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 970px;
 }
 
-.content {
-  border-top: solid 1px #CCCCCC;
-  margin-bottom: 50px;
-}
-
-.content h1 {
+.site-header .site-title {
   font-size: 42px;
-  font-weight: bold;
+  color: #2D607F;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  border-bottom: solid 1px #DDDDDD;
 }
 
-.content h2 {
-  font-size: 30px;
-  font-weight: bold;
+.centered-pills { text-align:center; }
+.centered-pills ul.nav-pills { display:inline-block; }
+.centered-pills li { display:inline; }
+.centered-pills a { float:left; }
+* html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
+*+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
+
+.site-menu .nav-pills li a {
+  background-color: #FFFFFF;
+  color: #2D607F;
+  padding-top: 0px;
+  padding-bottom: 5px;
 }
 
-.menu h1 a {
-  text-decoration: none;
+.site-menu .nav-pills li a:hover {
+  background-color: #FFFFFF;
+  color: #0A82CC;
 }
 
-.menu h3 a {
-  text-decoration: none;
+.site-menu .nav-pills .active a {
+  border-bottom: solid 3px #2D607F;
+  border-radius: 0px;
 }
 
-.pull-right {
-  float: right;
-}
-
-.btn {
-  display: inline-block;
-  *display: inline;
-  padding: 4px 12px;
-  margin-bottom: 0;
-  *margin-left: .3em;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  border: 1px solid #cccccc;
-  *border: 0;
-  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-bottom-color: #b3b3b3;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  *zoom: 1;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.post-header small {
-  margin-top: 0px;
-}
-
-.post-header h1 {
-  margin-bottom: 0px;
-}
-
-.post-header h2 {
-  margin-bottom: 0px;
-}
-
-.post-header h1 a {
-  color: #333333;
-  text-decoration: none
-}
-
-.post-header h1 a:hover {
-  color: #333333;
+.site-body {
+  padding-top: 30px;
 }
 
 .post {
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #DDDDDD;
 }
 
-@media screen and (min-width: 980px) {
-  .container {
-    margin: 0 auto;
-    width: 980px;
-  }
-
-  .menu {
-    position: fixed;
-    float: left;
-    width: 270px;
-    padding-right: 20px;
-    padding-left: 30px;
-    padding-top: 30px;
-  }
-
-  .content {
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 270px;
-    border-top: none;
-    border-left: solid 1px #CCCCCC;
-    width: 710px;
-  }
-
-  .content h1 {
-    font-size: 50px;
-  }
+.post h1 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
 }
 
-#disqus_thread {
-  margin-top: 50px;
+.post h1 small {
+  line-height: 22px;
+  vertical-align: middle;
 }
 
-code {
-  font-size: 14px;
+.tag-theory {
+  background-color: #d9534f;
+}
+
+.tag-data-science {
+  background-color: #f0ad4e;
+}
+
+.papers a {
+  font-weight: bold;
+}
+
+.post .post-header {
+  padding-bottom: 30px;
+}
+
+.post .post-header h1 {
+  font-size: 40px;
+}
+
+.site-footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.post-content h1 {
+  font-size: 30px;
+}
+
+.front {
+  max-width: 300px;
 }

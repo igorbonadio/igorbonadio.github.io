@@ -1,0 +1,22 @@
+---
+layout: default
+title: Presentations
+section: presentations
+---
+
+<div class="site-body">
+
+<table class="table table-hover">
+  {% for presentation in site.presentations %}
+  <tr>
+    <td><a href="{{ presentation.id }}/slides.pdf"><img src="{{ presentation.id }}/front.png" alt="compiladores" class="img-rounded front"></a></td>
+    <td>
+      <h2>{{ presentation.title }}</h2>
+      <p>{{ presentation.where }}</p>
+      <p>{{ presentation.description }}</p>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+</div>
