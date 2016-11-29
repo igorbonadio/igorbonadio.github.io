@@ -14,7 +14,7 @@ Embora este tipo de algoritmos seja comumente implementado em linguagem imperati
 
 ## Alinhando Proteínas
 
-Neste exemplo alinharemos proteínas. Sendo assim, nosso problema consiste em, dadas duas sequências, encontra o alinhamento ótimo segundo uma função que pontua o pareamento entre pares de aminoácidos. Outra parte fundamental é que podemos adicionar espaços em branco (gaps), sob um custo fixo por gap, com a finalidade de maximizar a pontuação total do alinhamento. Esses gaps representam possíveis inserções ou deleções de aminoácidos durante a evolução dos organismos.
+Neste exemplo alinharemos proteínas. Sendo assim, nosso problema consiste em, dadas duas sequências, encontrar o alinhamento ótimo segundo uma função que pontua o pareamento entre pares de aminoácidos. Outra parte fundamental é que podemos adicionar espaços em branco (gaps), sob um custo fixo por gap, com a finalidade de maximizar a pontuação total do alinhamento. Esses gaps representam possíveis inserções ou deleções de aminoácidos durante a evolução dos organismos.
 
 Um exemplo de alinhamento é dado a seguir. As letras representam aminoácidos e os hifens representam os gaps.
 
