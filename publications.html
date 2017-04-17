@@ -17,6 +17,17 @@ section: publications
       </div>
     {% endfor %}
 
+    <h1>Proceedings Papers</h2>
+    {% for paper in site.proceedings %}
+      <div class="post">
+        <ul>
+          <li>
+            {{ paper.authors }}. <a href="{{ paper.download }}">{{ paper.title }}</a>. {{ paper.journal }}, {{ paper.year }}.
+          </li>
+        </ul>
+      </div>
+    {% endfor %}
+
     <h1>Thesis</h2>
     {% for thesi in site.thesis %}
       <div class="post">

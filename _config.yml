@@ -23,6 +23,8 @@ highlighter: rouge
 collections:
   papers:
     output: false
+  proceedings:
+    output: false
   thesis:
     output: false
   projects:
